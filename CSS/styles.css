@@ -1,0 +1,443 @@
+ /*this is what a comment looks like in CSS i will use these to show you what things to in this file */
+
+
+html{
+  overflow: scroll;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+  min-height: 100vh;
+}
+.parent {
+  padding: 50px 200px 50px 200px;
+  display: flex;
+  color: black;
+}
+.child1 {
+  flex: 30%
+}
+.child2 {
+  margin-left: auto;
+  flex: 70%
+}
+.child2 h1 {
+margin:0px;
+}
+.child2 p {
+margin:20px;
+line-height: 1.25;
+}
+
+.parenta {
+  padding: 50px 200px 50px 200px;
+  color: black;
+}
+.child1a {
+  flex: 50%
+}
+.child2a {
+  margin-left: auto;
+  flex: 100%
+}
+.child2a h1 {
+margin:0px;
+}
+.child2a p {
+margin:20px;
+}
+
+footer {
+  background-color: black;
+  padding: 15px;
+  color: white;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  max-width:100%;
+  margin-top: auto;
+}
+h1 {
+  font-family: trajan;
+  text-align: center;
+  color: black;
+
+}
+p {
+  text-align: left;
+  color: gray;
+  display: inline-flex;
+}
+ul {
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+
+}
+li {
+  font-family: trajan;
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: grey;
+}
+nav{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black;
+
+}
+
+
+.flex-container {
+  padding: 0px 100px 0px 100px;
+  display: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.child-elements {
+  flex: 50%;
+   flex-grow: 0;
+   flex-shrink: 0;
+   flex-basis: auto;
+   order: 0;
+   margin: 0px;
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+}
+.contact-left-title h2{
+font-weight: 600;
+color: #0363aa;
+font-size: 40px;
+margin-bottom: 5px;
+}
+.contact-left-title hr{
+border: none;
+border-radius: 10px;
+width: 120px;
+height: 5px;
+background-color: ;
+}
+.contact-inputs{
+  font-family: sans-serif;
+  color: white;
+  padding:20px;
+  width:80%;
+  height:50px;
+  border: none;
+  outline: none;
+  background: black;
+  border-radius: 20px;
+}
+.contact-inputs::placeholder{
+  color: grey;
+}
+.contact-left button{
+display: flex;
+align-items: center;
+padding: 15px 30px;
+font-size: 16px;
+font-weight: bold;
+color: #000;
+border: none;
+border-radius: 50px;
+background: #fac855;
+}
+.contact-left textarea{
+  height:140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.contact-left hr{
+  overflow:hidden;
+  border:none;
+}
+
+ /*This is the main Font of the website, denoted by the font-family: inter line*/
+@font-face {
+  font-family: inter;
+  src: url(../static/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: trajan;
+  src: url(../static/trajanb.ttf);
+}
+ /*Down here I am calling the fontface line and making it so that the font i want is added to the lines i am calling
+ I.E. when i call "Body" and then add font-family inter then I am adding the inter font to all the text in the body
+ of the website */
+
+div {
+  font-family: inter;
+}
+
+body {
+  font-family: inter;
+}
+head {
+  font-family: inter;
+}
+/*Navbar Classes*/
+.navigate{
+
+}
+.navimg{
+  height: 50px;
+  position: relative;
+  float: left;
+  padding-right: 30px;
+}
+.navlist{
+
+}
+/*image classes*/
+.imagegrad{
+  float: left;
+  padding-left:100px;
+  width:80%;
+  height:100px;
+  object-fit:cover;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 20%, transparent 40%);
+}
+.imgoverbanner{
+  width:100%;
+  height:100px;
+  object-fit:cover;
+}
+.child1img{
+  width:100%;
+  padding-right:100px;
+}
+.paragraphimg{
+  width:20%;
+  padding-right:20px;
+}
+/*text classes*/
+.margin1{
+  margin-left:120px;
+  margin-right:120px;
+  font-size:18px;
+  color:black;
+}
+.textover{
+  position: absolute;
+  transform:translate(0%, 10%);
+}
+.textoverbanner{
+position: absolute;
+top:2%;
+left:50%;
+transform:translate(-50%, -10%);
+}
+.textoverbanner1{
+  position: absolute;
+  top:10%;
+  left:50%;
+  transform:translate(-50%, -10%);
+}
+.headerbody{
+  text-align:left;
+  margin:50px 100px 0px 100px;
+}
+.aboutgrid{
+  font-size:20px;
+  margin-left:100px;
+  margin-right:100px;
+  line-height: 30px;
+}
+.paragraphalign{
+  color:black;
+  align-items: center
+}
+.contentalign{
+
+}
+.altimgover{
+  width:100%; height:100px; object-fit:cover; mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 20%, transparent 40%)
+}
+.sectionhead{
+  padding-left:10px;
+
+}
+/*link classes*/
+.youtube-video{
+
+}
+.child2link{
+  padding: 20px;
+  float: Left;
+}
+.paragraphbutton{
+  width: 50px;
+  height: 50px;
+  padding-bottom:20px;
+}
+.linkbutton2a{
+  padding: 20px;
+  color:#000; background:#fac855;
+  border-radius: 50px;
+  text-decoration:none
+}
+/*Footer classes*/
+.footertext{
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+.footerbutton{
+  float: right;
+  padding: 10px;
+  padding-right:25px;
+  width:42px;
+  height:42px;
+}
+/* QUERIES */
+
+@media screen and (max-width: 600px) {
+  .navigate{
+
+  }
+  .navimg{
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  .navlist{
+
+  }
+  .margin1{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .imagegrad{
+    width: 100%;
+    padding-left: 0px;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 100%, transparent 100%);
+  }
+  .textover{
+    position: absolute;
+    transform:translate(-30%, 10%);
+  }
+  .textoverbanner{
+    font-size: 18px;
+    transform:translate(-50%, -10%);
+  }
+  .textoverbanner1{
+    font-size: 18px;
+    transform:translate(-50%, -10%);
+  }
+  .imgoverbanner{
+    height:200px;
+  }
+  .youtube-video{
+  height: 600px;
+  }
+  .footerbutton{
+    float: right;
+    padding: 5px;
+    padding-right:10px;
+    width:35px;
+    height:35px;
+  }
+.footertext{
+  margin-top: 16px;
+}
+.headerbody{
+  text-align:left;
+  margin:50px 50px 50px 50px;
+}
+.parent{
+  padding: 0px;
+  display:block;
+}
+.child1img{
+  padding-right: 0px;
+}
+.child2link{
+  font-size: 25px;
+}
+.child2{
+  font-size: 18px;
+}
+.child1a{
+  font-size: 18px;
+}
+.contact-left{
+  text-align: center;
+}
+
+.contact-left button{
+  padding:30px 60px;
+  margin-left: 20px;
+}
+.child2a{
+  font-size: 18px;
+}
+.linkbutton2a{
+  margin:20px 40px 20px 40px;
+  display:block;
+}
+.wrapper img{
+
+}
+.wrapper1 img{
+  padding-left: 18px;
+}
+.aboutgrid{
+  margin: 0px;
+}
+.paragraphalign{
+display: grid;
+padding: 15px;
+margin-top: 0px;
+}
+.paragraphimg{
+  width:100%;
+  padding-bottom: 20px;
+  padding-right: 0px
+}
+.contentalign{
+  text-align: center;
+}
+.paragraphbutton{
+  padding-left: 20px;
+}
+.altimgover{
+  width:100%;
+  height:100px;
+  object-fit:cover;
+  mask-image: none;
+  top:2%;
+  left:50%;
+}
+.sectionhead{
+  transform:translate(0%, -20%)
+}
+}
+/*TABLET AND WIDESCREEN MEDIA TOMORROW, WORK ON PHONE SIZES AS WELL, ONLY THE PIXEL 7 DISPLAYS CORRECTLY*/
